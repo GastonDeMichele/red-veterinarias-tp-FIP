@@ -1,0 +1,9 @@
+# Ignorar la carpeta de dependencias de NPM
+node_modules/
+
+# Ignorar los archivos compilados de TypeScript
+dist/
+
+# Ignorar archivos de configuración específicos del sistema operativo
+.DS_Store
+Thumbs.db
