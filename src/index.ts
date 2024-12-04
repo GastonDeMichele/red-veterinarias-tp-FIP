@@ -1,4 +1,4 @@
-// src/main.ts
+/*// src/main.ts
 
 import { Veterinaria } from './models/Veterinaria';
 import { Cliente } from './models/Cliente';
@@ -46,3 +46,27 @@ console.log('Clientes después de modificación:', gestorClientes.getAllClientes
 // Baja de una veterinaria
 gestorVeterinarias.bajaVeterinaria(veterinaria1.id);
 console.log('Veterinarias después de baja:', gestorVeterinarias.getAllVeterinarias());
+*/
+
+
+// main.ts
+import { GestorVeterinarias } from './services/GestorVeterinarias';
+import { GestorClientes } from './services/GestorClientes';
+import { GestorPacientes } from './services/GestorPacientes';
+import { GestorProveedores } from './services/GestorProveedores';
+import { Paciente } from './models/Paciente'; // Asegúrate de que la ruta sea la correcta
+
+
+const gestorVeterinarias = new GestorVeterinarias();
+const gestorClientes = new GestorClientes();
+const gestorPacientes = new GestorPacientes();
+const gestorProveedores = new GestorProveedores();
+
+// Ejemplo de uso
+// Creación de objetos
+const veterinaria = gestorVeterinarias.altaVeterinaria('Veterinaria ABC', 'Calle Ficticia 123');
+const cliente = gestorClientes.altaCliente('Juan Pérez', '555-1234');
+const paciente = gestorPacientes.altaPaciente(new Paciente('Firulais', 'Perro', cliente.id, ''));
+const proveedor = gestorProveedores.altaProveedor('Proveedor XYZ', '555-5678');
+
+console.log(veterinaria, cliente, paciente, proveedor);
