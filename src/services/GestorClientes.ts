@@ -35,7 +35,7 @@ export class GestorClientes {
 */
 
 
-// services/GestorClientes.ts
+
 import { Cliente } from '../models/Cliente';
 import { generateUniqueId } from "../utils/IdGenerator";
 

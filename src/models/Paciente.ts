@@ -29,7 +29,7 @@ export class Paciente {
     public nombre: string,
     public especie: string,
     public idCliente: string,
-    public id: string // Mantiene el ID como parámetro
+    public id: string
   ) {}
 
   modificarDatos(nuevoNombre: string, nuevaEspecie: string): void {

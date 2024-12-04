@@ -23,13 +23,12 @@ export class Proveedor {
 */
 
 
-// models/Proveedor.ts
 
 export class Proveedor {
   constructor(
     public nombre: string,
     public telefono: string,
-    public id: string // El ID se pasa como parámetro
+    public id: string 
   ) {}
 
   modificarDatos(nuevoNombre: string, nuevoTelefono: string): void {

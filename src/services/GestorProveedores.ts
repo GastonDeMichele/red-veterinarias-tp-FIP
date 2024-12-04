@@ -34,7 +34,7 @@ export class GestorProveedores {
 }
 */
 
-// services/GestorProveedores.ts
+
 import { Proveedor } from '../models/Proveedor';
 import { generateUniqueId } from "../utils/IdGenerator";
 
@@ -42,8 +42,8 @@ export class GestorProveedores {
   private proveedores: Proveedor[] = [];
 
   altaProveedor(nombre: string, telefono: string): Proveedor {
-    const id = generateUniqueId(); // Generar un ID único
-    const nuevoProveedor = new Proveedor(nombre, telefono, id); // Asignar el ID
+    const id = generateUniqueId(); 
+    const nuevoProveedor = new Proveedor(nombre, telefono, id); 
     this.proveedores.push(nuevoProveedor);
     return nuevoProveedor;
   }

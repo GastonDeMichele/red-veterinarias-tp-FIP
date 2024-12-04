@@ -41,8 +41,8 @@ export class GestorPacientes {
   private pacientes: Paciente[] = [];
 
   altaPaciente(paciente: Paciente): Paciente {
-    const id = generateUniqueId(); // Generar un ID único
-    paciente.id = id; // Asignar el ID generado al paciente
+    const id = generateUniqueId(); 
+    paciente.id = id; 
     this.pacientes.push(paciente);
     return paciente;
   }

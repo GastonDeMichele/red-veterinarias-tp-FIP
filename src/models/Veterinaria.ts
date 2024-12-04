@@ -24,13 +24,13 @@ export class Veterinaria {
 }*/
 
 
-// models/Veterinaria.ts
+
 
 export class Veterinaria {
   constructor(
     public nombre: string,
     public direccion: string,
-    public id: string // El ID se pasa como parámetro
+    public id: string 
   ) {}
 
   modificarDatos(nuevoNombre: string, nuevaDireccion: string): void {

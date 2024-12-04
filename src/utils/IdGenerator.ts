@@ -11,13 +11,11 @@ export function generateUniqueId(): string {
         newId = Math.random().toString(36).substr(2, 9); // Genera un ID aleatorio
     } while (generatedIds.has(newId)); // Reintenta si el ID ya existe
 
-    generatedIds.add(newId); // Almacena el nuevo ID en el conjunto
+    generatedIds.add(newId); 
     return newId;
 }
 
-/**
- * Resetea los IDs generados (útil para pruebas)
- */
+
 export function resetGeneratedIds(): void {
     generatedIds.clear();
 }

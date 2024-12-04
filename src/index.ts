@@ -49,12 +49,12 @@ console.log('Veterinarias después de baja:', gestorVeterinarias.getAllVeterinar
 */
 
 
-// main.ts
+
 import { GestorVeterinarias } from './services/GestorVeterinarias';
 import { GestorClientes } from './services/GestorClientes';
 import { GestorPacientes } from './services/GestorPacientes';
 import { GestorProveedores } from './services/GestorProveedores';
-import { Paciente } from './models/Paciente'; // Asegúrate de que la ruta sea la correcta
+import { Paciente } from './models/Paciente'; 
 
 
 const gestorVeterinarias = new GestorVeterinarias();
@@ -62,8 +62,7 @@ const gestorClientes = new GestorClientes();
 const gestorPacientes = new GestorPacientes();
 const gestorProveedores = new GestorProveedores();
 
-// Ejemplo de uso
-// Creación de objetos
+
 const veterinaria = gestorVeterinarias.altaVeterinaria('Veterinaria ABC', 'Calle Ficticia 123');
 const cliente = gestorClientes.altaCliente('Juan Pérez', '555-1234');
 const paciente = gestorPacientes.altaPaciente(new Paciente('Firulais', 'Perro', cliente.id, ''));

@@ -33,13 +33,12 @@ export class Cliente {
 }
 */
 
-// models/Cliente.ts
 
 export class Cliente {
   constructor(
     public nombre: string,
     public telefono: string,
-    public id: string // El ID se pasa como parámetro
+    public id: string 
   ) {}
 
   modificarDatos(nuevoNombre: string, nuevoTelefono: string): void {

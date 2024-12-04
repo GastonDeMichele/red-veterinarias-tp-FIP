@@ -35,7 +35,7 @@ export class GestorVeterinarias {
 }
 */
 
-// services/GestorVeterinarias.ts
+
 import { Veterinaria } from '../models/Veterinaria';
 import { generateUniqueId } from "../utils/IdGenerator";
 
@@ -43,8 +43,8 @@ export class GestorVeterinarias {
   private veterinarias: Veterinaria[] = [];
 
   altaVeterinaria(nombre: string, direccion: string): Veterinaria {
-    const id = generateUniqueId(); // Generar un ID único
-    const nuevaVeterinaria = new Veterinaria(nombre, direccion, id); // Asignar el ID
+    const id = generateUniqueId();
+    const nuevaVeterinaria = new Veterinaria(nombre, direccion, id); 
     this.veterinarias.push(nuevaVeterinaria);
     return nuevaVeterinaria;
   }
